@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1cf-4G-Imx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="guh-ea-yKU">
+            <objects>
+                <navigationController id="JFA-J3-121" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gUp-8g-OWh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hMs-U2-gMu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tho-lS-PaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1070" y="2"/>
+        </scene>
+        <!--MobileCatalogsViewController-->
+        <scene sceneID="8gU-1l-uRn">
+            <objects>
+                <viewController storyboardIdentifier="MobileCatalogsViewController" title="MobileCatalogsViewController" id="1cf-4G-Imx" customClass="MobileCatalogsViewController" customModule="AxiomTelecomAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1dO-hl-x6q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tT-Dk-fdE" customClass="ShadesView" customModule="AxiomTelecomAssignment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aX2-Qs-QIk">
+                                        <rect key="frame" x="5" y="0.0" width="404" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thz-y6-ZZO">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="OsV-IQ-S9O"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="8" minY="20" maxX="8" maxY="20"/>
+                                                <state key="normal" image="circle.grid.2x2" catalog="system">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwc-H7-8aK">
+                                                <rect key="frame" x="45" y="0.0" width="269" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybg-D7-pEk" customClass="IconButton" customModule="AxiomTelecomAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="319" y="0.0" width="40" height="60"/>
+                                                <inset key="imageEdgeInsets" minX="8" minY="20" maxX="8" maxY="20"/>
+                                                <state key="normal" image="magnifyingglass" catalog="system">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnSearchAction:" destination="1cf-4G-Imx" eventType="touchUpInside" id="8RS-1J-VxC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETP-E7-gHn" customClass="IconButton" customModule="AxiomTelecomAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="364" y="0.0" width="40" height="60"/>
+                                                <inset key="imageEdgeInsets" minX="8" minY="20" maxX="8" maxY="20"/>
+                                                <state key="normal" image="cart" catalog="system">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnMoreOptionAction:" destination="1cf-4G-Imx" eventType="touchUpInside" id="f7S-9G-woS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ybg-D7-pEk" firstAttribute="width" secondItem="Thz-y6-ZZO" secondAttribute="width" id="62r-1q-AUz"/>
+                                            <constraint firstItem="ETP-E7-gHn" firstAttribute="width" secondItem="Thz-y6-ZZO" secondAttribute="width" id="Unb-Fb-I27"/>
+                                        </constraints>
+                                    </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="52g-Pp-GS5" customClass="CategoryCollectionView" customModule="AxiomTelecomAssignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="JYp-kP-tIh"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5vB-e2-aO2">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="52g-Pp-GS5" secondAttribute="bottom" id="7IA-nt-klh"/>
+                                    <constraint firstItem="aX2-Qs-QIk" firstAttribute="leading" secondItem="7tT-Dk-fdE" secondAttribute="leading" constant="5" id="7q2-bu-dV8"/>
+                                    <constraint firstItem="52g-Pp-GS5" firstAttribute="top" secondItem="aX2-Qs-QIk" secondAttribute="bottom" id="8eJ-jd-jSd"/>
+                                    <constraint firstAttribute="trailing" secondItem="aX2-Qs-QIk" secondAttribute="trailing" constant="5" id="9mt-wb-KgU"/>
+                                    <constraint firstAttribute="trailing" secondItem="52g-Pp-GS5" secondAttribute="trailing" id="Ijx-Z1-c31"/>
+                                    <constraint firstItem="aX2-Qs-QIk" firstAttribute="top" secondItem="7tT-Dk-fdE" secondAttribute="top" id="hhX-X3-UBD"/>
+                                    <constraint firstAttribute="height" constant="120" id="o8Z-lg-ufX"/>
+                                    <constraint firstItem="52g-Pp-GS5" firstAttribute="leading" secondItem="7tT-Dk-fdE" secondAttribute="leading" id="qxj-Ki-tEl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-Wz-Ob8">
+                                <rect key="frame" x="0.0" y="164" width="414" height="698"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SfD-t3-Q0P">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LYd-VX-K0S" firstAttribute="bottom" secondItem="xTT-Wz-Ob8" secondAttribute="bottom" id="DOP-JV-oew"/>
+                            <constraint firstItem="xTT-Wz-Ob8" firstAttribute="top" secondItem="7tT-Dk-fdE" secondAttribute="bottom" id="GvO-na-KbO"/>
+                            <constraint firstItem="xTT-Wz-Ob8" firstAttribute="leading" secondItem="LYd-VX-K0S" secondAttribute="leading" id="Sig-Hz-c4h"/>
+                            <constraint firstItem="7tT-Dk-fdE" firstAttribute="leading" secondItem="LYd-VX-K0S" secondAttribute="leading" id="UgG-zu-TxT"/>
+                            <constraint firstItem="7tT-Dk-fdE" firstAttribute="top" secondItem="LYd-VX-K0S" secondAttribute="top" id="m1A-1m-VoI"/>
+                            <constraint firstItem="LYd-VX-K0S" firstAttribute="trailing" secondItem="xTT-Wz-Ob8" secondAttribute="trailing" id="tFS-cO-fk8"/>
+                            <constraint firstItem="LYd-VX-K0S" firstAttribute="trailing" secondItem="7tT-Dk-fdE" secondAttribute="trailing" id="vi4-vT-5hW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LYd-VX-K0S"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Most Popular" id="VMn-mJ-6J7"/>
+                    <connections>
+                        <outlet property="catalogCollectionView" destination="xTT-Wz-Ob8" id="vyu-kE-yUt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Llo-wP-o3x" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.11594202898553" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+    </resources>
+</document>

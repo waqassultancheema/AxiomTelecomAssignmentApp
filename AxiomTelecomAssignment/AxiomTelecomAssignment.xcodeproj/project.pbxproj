@@ -1,0 +1,1011 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F9E25E991D4345C60A77CDA /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6594EFE7BF5B0933D7898F22 /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework */; };
+		757E390605FE57F9F11D3A62 /* Pods_AxiomTelecomAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A6C64AB5F7565ABBDB1D7D /* Pods_AxiomTelecomAssignment.framework */; };
+		8246E2472502505000B4BA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2462502505000B4BA67 /* AppDelegate.swift */; };
+		8246E25E2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E25D2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift */; };
+		8246E2692502505200B4BA67 /* AxiomTelecomAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2682502505200B4BA67 /* AxiomTelecomAssignmentUITests.swift */; };
+		8246E2CA2502518800B4BA67 /* MobileCatalogsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2872502518700B4BA67 /* MobileCatalogsConfigurator.swift */; };
+		8246E2CC2502518800B4BA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8246E28A2502518700B4BA67 /* LaunchScreen.storyboard */; };
+		8246E2CD2502518800B4BA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8246E28C2502518700B4BA67 /* Main.storyboard */; };
+		8246E2CF2502518800B4BA67 /* MobileCatalogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2902502518700B4BA67 /* MobileCatalogsInteractor.swift */; };
+		8246E2D12502518800B4BA67 /* MobileCatalogsCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2962502518700B4BA67 /* MobileCatalogsCollectionViewDataSource.swift */; };
+		8246E2D22502518800B4BA67 /* MobileCatalogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2972502518700B4BA67 /* MobileCatalogsViewController.swift */; };
+		8246E2D32502518800B4BA67 /* MobileCatalogsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2992502518700B4BA67 /* MobileCatalogsCollectionViewCell.swift */; };
+		8246E2D42502518800B4BA67 /* MobileCatalogsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8246E29A2502518700B4BA67 /* MobileCatalogsCollectionViewCell.xib */; };
+		8246E2DD2502518800B4BA67 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2A92502518700B4BA67 /* Constants.swift */; };
+		8246E2E02502518800B4BA67 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2AD2502518700B4BA67 /* ShadowView.swift */; };
+		8246E2E12502518800B4BA67 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2AF2502518700B4BA67 /* Extensions.swift */; };
+		8246E2E32502518800B4BA67 /* MobileCatalogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2B32502518700B4BA67 /* MobileCatalogsViewModel.swift */; };
+		8246E2E42502518800B4BA67 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2B52502518700B4BA67 /* RequestModel.swift */; };
+		8246E2E92502518800B4BA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8246E2BB2502518800B4BA67 /* Assets.xcassets */; };
+		8246E2EC2502518800B4BA67 /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C02502518800B4BA67 /* ServiceApi.swift */; };
+		8246E2ED2502518800B4BA67 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C12502518800B4BA67 /* LRUCache.swift */; };
+		8246E2EF2502518800B4BA67 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C32502518800B4BA67 /* Reachability.swift */; };
+		8246E2F02502518800B4BA67 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C42502518800B4BA67 /* ResponseParser.swift */; };
+		8246E2F12502518800B4BA67 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C52502518800B4BA67 /* WebAPI.swift */; };
+		8246E2F22502518800B4BA67 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C62502518800B4BA67 /* NetworkError.swift */; };
+		8246E2F32502518800B4BA67 /* MobileCatalogsRemoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C92502518800B4BA67 /* MobileCatalogsRemoteWorker.swift */; };
+		8246E2F62502542500B4BA67 /* MobileCatalogElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2F52502542500B4BA67 /* MobileCatalogElement.swift */; };
+		8246E2F82502594D00B4BA67 /* MobileCatalogsAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2F72502594D00B4BA67 /* MobileCatalogsAppRouter.swift */; };
+		8246E2FA2502596800B4BA67 /* MobileCatalogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2F92502596800B4BA67 /* MobileCatalogsPresenter.swift */; };
+		82535C582502CEC9004AA2AE /* CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82535C572502CEC9004AA2AE /* CategoryCollectionView.swift */; };
+		82535C5C2502CEEE004AA2AE /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82535C5A2502CEEE004AA2AE /* CategoryCollectionViewCell.swift */; };
+		82535C5D2502CEEE004AA2AE /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82535C5B2502CEEE004AA2AE /* CategoryCollectionViewCell.xib */; };
+		82535C5F2502DC9C004AA2AE /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82535C5E2502DC9C004AA2AE /* ActivityIndicator.swift */; };
+		A7F9C8DBD63FA81F7C18C0EE /* Pods_AxiomTelecomAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1BB53CA8A4DB1C983B1E82 /* Pods_AxiomTelecomAssignmentTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8246E25A2502505200B4BA67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8246E23B2502505000B4BA67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8246E2422502505000B4BA67;
+			remoteInfo = AxiomTelecomAssignment;
+		};
+		8246E2652502505200B4BA67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8246E23B2502505000B4BA67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8246E2422502505000B4BA67;
+			remoteInfo = AxiomTelecomAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04A809E5AE17A8E312F2C1BF /* Pods-AxiomTelecomAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxiomTelecomAssignment.debug.xcconfig"; path = "Target Support Files/Pods-AxiomTelecomAssignment/Pods-AxiomTelecomAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		4D658EEA6F4713D0FBEF4EE6 /* Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6594EFE7BF5B0933D7898F22 /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8246E2432502505000B4BA67 /* AxiomTelecomAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxiomTelecomAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8246E2462502505000B4BA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8246E2542502505200B4BA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8246E2592502505200B4BA67 /* AxiomTelecomAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxiomTelecomAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8246E25D2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxiomTelecomAssignmentTests.swift; sourceTree = "<group>"; };
+		8246E25F2502505200B4BA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8246E2642502505200B4BA67 /* AxiomTelecomAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxiomTelecomAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8246E2682502505200B4BA67 /* AxiomTelecomAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxiomTelecomAssignmentUITests.swift; sourceTree = "<group>"; };
+		8246E26A2502505200B4BA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8246E2872502518700B4BA67 /* MobileCatalogsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsConfigurator.swift; sourceTree = "<group>"; };
+		8246E28B2502518700B4BA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8246E28D2502518700B4BA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8246E2902502518700B4BA67 /* MobileCatalogsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsInteractor.swift; sourceTree = "<group>"; };
+		8246E2962502518700B4BA67 /* MobileCatalogsCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		8246E2972502518700B4BA67 /* MobileCatalogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsViewController.swift; sourceTree = "<group>"; };
+		8246E2992502518700B4BA67 /* MobileCatalogsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsCollectionViewCell.swift; sourceTree = "<group>"; };
+		8246E29A2502518700B4BA67 /* MobileCatalogsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileCatalogsCollectionViewCell.xib; sourceTree = "<group>"; };
+		8246E2A92502518700B4BA67 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8246E2AD2502518700B4BA67 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		8246E2AF2502518700B4BA67 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8246E2B32502518700B4BA67 /* MobileCatalogsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsViewModel.swift; sourceTree = "<group>"; };
+		8246E2B52502518700B4BA67 /* RequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		8246E2BB2502518800B4BA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8246E2C02502518800B4BA67 /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
+		8246E2C12502518800B4BA67 /* LRUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
+		8246E2C32502518800B4BA67 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8246E2C42502518800B4BA67 /* ResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		8246E2C52502518800B4BA67 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		8246E2C62502518800B4BA67 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8246E2C92502518800B4BA67 /* MobileCatalogsRemoteWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsRemoteWorker.swift; sourceTree = "<group>"; };
+		8246E2F52502542500B4BA67 /* MobileCatalogElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCatalogElement.swift; sourceTree = "<group>"; };
+		8246E2F72502594D00B4BA67 /* MobileCatalogsAppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsAppRouter.swift; sourceTree = "<group>"; };
+		8246E2F92502596800B4BA67 /* MobileCatalogsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsPresenter.swift; sourceTree = "<group>"; };
+		82535C572502CEC9004AA2AE /* CategoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionView.swift; sourceTree = "<group>"; };
+		82535C5A2502CEEE004AA2AE /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		82535C5B2502CEEE004AA2AE /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		82535C5E2502DC9C004AA2AE /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		89A0DC9EEB77DC4D6B698A7A /* Pods-AxiomTelecomAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxiomTelecomAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-AxiomTelecomAssignmentTests/Pods-AxiomTelecomAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98A6C64AB5F7565ABBDB1D7D /* Pods_AxiomTelecomAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxiomTelecomAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1BB53CA8A4DB1C983B1E82 /* Pods_AxiomTelecomAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxiomTelecomAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC59D2874560607DCCE44CCB /* Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E46322A4ED20C1DD918BAE28 /* Pods-AxiomTelecomAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxiomTelecomAssignment.release.xcconfig"; path = "Target Support Files/Pods-AxiomTelecomAssignment/Pods-AxiomTelecomAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		F31DF874D3C182F6D3F5CACF /* Pods-AxiomTelecomAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxiomTelecomAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-AxiomTelecomAssignmentTests/Pods-AxiomTelecomAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8246E2402502505000B4BA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757E390605FE57F9F11D3A62 /* Pods_AxiomTelecomAssignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8246E2562502505200B4BA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F9C8DBD63FA81F7C18C0EE /* Pods_AxiomTelecomAssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8246E2612502505200B4BA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9E25E991D4345C60A77CDA /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E64B6EDD52AE7F8E3575C58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04A809E5AE17A8E312F2C1BF /* Pods-AxiomTelecomAssignment.debug.xcconfig */,
+				E46322A4ED20C1DD918BAE28 /* Pods-AxiomTelecomAssignment.release.xcconfig */,
+				4D658EEA6F4713D0FBEF4EE6 /* Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig */,
+				BC59D2874560607DCCE44CCB /* Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.release.xcconfig */,
+				89A0DC9EEB77DC4D6B698A7A /* Pods-AxiomTelecomAssignmentTests.debug.xcconfig */,
+				F31DF874D3C182F6D3F5CACF /* Pods-AxiomTelecomAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69A823597C7F7835E19031D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98A6C64AB5F7565ABBDB1D7D /* Pods_AxiomTelecomAssignment.framework */,
+				6594EFE7BF5B0933D7898F22 /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework */,
+				BB1BB53CA8A4DB1C983B1E82 /* Pods_AxiomTelecomAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8246E23A2502505000B4BA67 = {
+			isa = PBXGroup;
+			children = (
+				8246E2452502505000B4BA67 /* AxiomTelecomAssignment */,
+				8246E25C2502505200B4BA67 /* AxiomTelecomAssignmentTests */,
+				8246E2672502505200B4BA67 /* AxiomTelecomAssignmentUITests */,
+				8246E2442502505000B4BA67 /* Products */,
+				1E64B6EDD52AE7F8E3575C58 /* Pods */,
+				69A823597C7F7835E19031D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8246E2442502505000B4BA67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2432502505000B4BA67 /* AxiomTelecomAssignment.app */,
+				8246E2592502505200B4BA67 /* AxiomTelecomAssignmentTests.xctest */,
+				8246E2642502505200B4BA67 /* AxiomTelecomAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8246E2452502505000B4BA67 /* AxiomTelecomAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2462502505000B4BA67 /* AppDelegate.swift */,
+				8246E2BA2502518800B4BA67 /* Assets */,
+				8246E2862502518700B4BA67 /* Configurator */,
+				8246E2932502518700B4BA67 /* Controllers */,
+				8246E2A82502518700B4BA67 /* Helpers */,
+				8246E28E2502518700B4BA67 /* Interactor */,
+				8246E2B12502518700B4BA67 /* Models */,
+				8246E2BC2502518800B4BA67 /* Presenter */,
+				8246E2912502518700B4BA67 /* Router */,
+				8246E2892502518700B4BA67 /* StoryBoards */,
+				8246E2BF2502518800B4BA67 /* WebApi */,
+				8246E2C72502518800B4BA67 /* Worker */,
+				8246E2542502505200B4BA67 /* Info.plist */,
+			);
+			path = AxiomTelecomAssignment;
+			sourceTree = "<group>";
+		};
+		8246E25C2502505200B4BA67 /* AxiomTelecomAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				8246E25D2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift */,
+				8246E25F2502505200B4BA67 /* Info.plist */,
+			);
+			path = AxiomTelecomAssignmentTests;
+			sourceTree = "<group>";
+		};
+		8246E2672502505200B4BA67 /* AxiomTelecomAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2682502505200B4BA67 /* AxiomTelecomAssignmentUITests.swift */,
+				8246E26A2502505200B4BA67 /* Info.plist */,
+			);
+			path = AxiomTelecomAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		8246E2862502518700B4BA67 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2872502518700B4BA67 /* MobileCatalogsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8246E2892502518700B4BA67 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				8246E28A2502518700B4BA67 /* LaunchScreen.storyboard */,
+				8246E28C2502518700B4BA67 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		8246E28E2502518700B4BA67 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2902502518700B4BA67 /* MobileCatalogsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8246E2912502518700B4BA67 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2F72502594D00B4BA67 /* MobileCatalogsAppRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8246E2932502518700B4BA67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2942502518700B4BA67 /* MobileCatalogsViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8246E2942502518700B4BA67 /* MobileCatalogsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				82535C562502CEAF004AA2AE /* CategoryCollectionView */,
+				8246E2952502518700B4BA67 /* MobileCatalogsCollectionViewDataSource */,
+				8246E2972502518700B4BA67 /* MobileCatalogsViewController.swift */,
+				8246E2982502518700B4BA67 /* MobileCatalogsCollectionViewCell */,
+			);
+			path = MobileCatalogsViewController;
+			sourceTree = "<group>";
+		};
+		8246E2952502518700B4BA67 /* MobileCatalogsCollectionViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2962502518700B4BA67 /* MobileCatalogsCollectionViewDataSource.swift */,
+			);
+			path = MobileCatalogsCollectionViewDataSource;
+			sourceTree = "<group>";
+		};
+		8246E2982502518700B4BA67 /* MobileCatalogsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2992502518700B4BA67 /* MobileCatalogsCollectionViewCell.swift */,
+				8246E29A2502518700B4BA67 /* MobileCatalogsCollectionViewCell.xib */,
+			);
+			path = MobileCatalogsCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		8246E2A82502518700B4BA67 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2A92502518700B4BA67 /* Constants.swift */,
+				8246E2AA2502518700B4BA67 /* CustomControls */,
+				8246E2AE2502518700B4BA67 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8246E2AA2502518700B4BA67 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				82535C5E2502DC9C004AA2AE /* ActivityIndicator.swift */,
+				8246E2AD2502518700B4BA67 /* ShadowView.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		8246E2AE2502518700B4BA67 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2AF2502518700B4BA67 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8246E2B12502518700B4BA67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2F4250253E400B4BA67 /* ResponseModel */,
+				8246E2B22502518700B4BA67 /* ViewModels */,
+				8246E2B42502518700B4BA67 /* RequestModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8246E2B22502518700B4BA67 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2B32502518700B4BA67 /* MobileCatalogsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8246E2B42502518700B4BA67 /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2B52502518700B4BA67 /* RequestModel.swift */,
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		8246E2BA2502518800B4BA67 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2BB2502518800B4BA67 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8246E2BC2502518800B4BA67 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2F92502596800B4BA67 /* MobileCatalogsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8246E2BF2502518800B4BA67 /* WebApi */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2C02502518800B4BA67 /* ServiceApi.swift */,
+				8246E2C12502518800B4BA67 /* LRUCache.swift */,
+				8246E2C32502518800B4BA67 /* Reachability.swift */,
+				8246E2C42502518800B4BA67 /* ResponseParser.swift */,
+				8246E2C52502518800B4BA67 /* WebAPI.swift */,
+				8246E2C62502518800B4BA67 /* NetworkError.swift */,
+			);
+			path = WebApi;
+			sourceTree = "<group>";
+		};
+		8246E2C72502518800B4BA67 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2C82502518800B4BA67 /* NetworkWorker */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		8246E2C82502518800B4BA67 /* NetworkWorker */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2C92502518800B4BA67 /* MobileCatalogsRemoteWorker.swift */,
+			);
+			path = NetworkWorker;
+			sourceTree = "<group>";
+		};
+		8246E2F4250253E400B4BA67 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				8246E2F52502542500B4BA67 /* MobileCatalogElement.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		82535C562502CEAF004AA2AE /* CategoryCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				82535C572502CEC9004AA2AE /* CategoryCollectionView.swift */,
+				82535C592502CED0004AA2AE /* CategoryCollectionViewCell */,
+			);
+			path = CategoryCollectionView;
+			sourceTree = "<group>";
+		};
+		82535C592502CED0004AA2AE /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				82535C5A2502CEEE004AA2AE /* CategoryCollectionViewCell.swift */,
+				82535C5B2502CEEE004AA2AE /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8246E2422502505000B4BA67 /* AxiomTelecomAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8246E26D2502505200B4BA67 /* Build configuration list for PBXNativeTarget "AxiomTelecomAssignment" */;
+			buildPhases = (
+				D1DCF111CBE4F494475BA14D /* [CP] Check Pods Manifest.lock */,
+				8246E23F2502505000B4BA67 /* Sources */,
+				8246E2402502505000B4BA67 /* Frameworks */,
+				8246E2412502505000B4BA67 /* Resources */,
+				32513AFBEBE69EAF771C35F8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AxiomTelecomAssignment;
+			productName = AxiomTelecomAssignment;
+			productReference = 8246E2432502505000B4BA67 /* AxiomTelecomAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8246E2582502505200B4BA67 /* AxiomTelecomAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8246E2702502505200B4BA67 /* Build configuration list for PBXNativeTarget "AxiomTelecomAssignmentTests" */;
+			buildPhases = (
+				4AD751A2C57415E437E92B7E /* [CP] Check Pods Manifest.lock */,
+				8246E2552502505200B4BA67 /* Sources */,
+				8246E2562502505200B4BA67 /* Frameworks */,
+				8246E2572502505200B4BA67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8246E25B2502505200B4BA67 /* PBXTargetDependency */,
+			);
+			name = AxiomTelecomAssignmentTests;
+			productName = AxiomTelecomAssignmentTests;
+			productReference = 8246E2592502505200B4BA67 /* AxiomTelecomAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8246E2632502505200B4BA67 /* AxiomTelecomAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8246E2732502505200B4BA67 /* Build configuration list for PBXNativeTarget "AxiomTelecomAssignmentUITests" */;
+			buildPhases = (
+				744A93D11E9361F3D8FEBE2A /* [CP] Check Pods Manifest.lock */,
+				8246E2602502505200B4BA67 /* Sources */,
+				8246E2612502505200B4BA67 /* Frameworks */,
+				8246E2622502505200B4BA67 /* Resources */,
+				1491A35F8B972A6810190231 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8246E2662502505200B4BA67 /* PBXTargetDependency */,
+			);
+			name = AxiomTelecomAssignmentUITests;
+			productName = AxiomTelecomAssignmentUITests;
+			productReference = 8246E2642502505200B4BA67 /* AxiomTelecomAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8246E23B2502505000B4BA67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Waqas Sultan";
+				TargetAttributes = {
+					8246E2422502505000B4BA67 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					8246E2582502505200B4BA67 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 8246E2422502505000B4BA67;
+					};
+					8246E2632502505200B4BA67 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 8246E2422502505000B4BA67;
+					};
+				};
+			};
+			buildConfigurationList = 8246E23E2502505000B4BA67 /* Build configuration list for PBXProject "AxiomTelecomAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8246E23A2502505000B4BA67;
+			productRefGroup = 8246E2442502505000B4BA67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8246E2422502505000B4BA67 /* AxiomTelecomAssignment */,
+				8246E2582502505200B4BA67 /* AxiomTelecomAssignmentTests */,
+				8246E2632502505200B4BA67 /* AxiomTelecomAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8246E2412502505000B4BA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8246E2CC2502518800B4BA67 /* LaunchScreen.storyboard in Resources */,
+				82535C5D2502CEEE004AA2AE /* CategoryCollectionViewCell.xib in Resources */,
+				8246E2D42502518800B4BA67 /* MobileCatalogsCollectionViewCell.xib in Resources */,
+				8246E2E92502518800B4BA67 /* Assets.xcassets in Resources */,
+				8246E2CD2502518800B4BA67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8246E2572502505200B4BA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8246E2622502505200B4BA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1491A35F8B972A6810190231 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32513AFBEBE69EAF771C35F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AxiomTelecomAssignment/Pods-AxiomTelecomAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AxiomTelecomAssignment/Pods-AxiomTelecomAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AxiomTelecomAssignment/Pods-AxiomTelecomAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AD751A2C57415E437E92B7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AxiomTelecomAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		744A93D11E9361F3D8FEBE2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1DCF111CBE4F494475BA14D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AxiomTelecomAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8246E23F2502505000B4BA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8246E2D32502518800B4BA67 /* MobileCatalogsCollectionViewCell.swift in Sources */,
+				82535C5C2502CEEE004AA2AE /* CategoryCollectionViewCell.swift in Sources */,
+				8246E2F12502518800B4BA67 /* WebAPI.swift in Sources */,
+				8246E2CA2502518800B4BA67 /* MobileCatalogsConfigurator.swift in Sources */,
+				82535C5F2502DC9C004AA2AE /* ActivityIndicator.swift in Sources */,
+				8246E2ED2502518800B4BA67 /* LRUCache.swift in Sources */,
+				8246E2F32502518800B4BA67 /* MobileCatalogsRemoteWorker.swift in Sources */,
+				8246E2FA2502596800B4BA67 /* MobileCatalogsPresenter.swift in Sources */,
+				8246E2D22502518800B4BA67 /* MobileCatalogsViewController.swift in Sources */,
+				8246E2F62502542500B4BA67 /* MobileCatalogElement.swift in Sources */,
+				8246E2F82502594D00B4BA67 /* MobileCatalogsAppRouter.swift in Sources */,
+				8246E2DD2502518800B4BA67 /* Constants.swift in Sources */,
+				8246E2E42502518800B4BA67 /* RequestModel.swift in Sources */,
+				8246E2D12502518800B4BA67 /* MobileCatalogsCollectionViewDataSource.swift in Sources */,
+				8246E2EC2502518800B4BA67 /* ServiceApi.swift in Sources */,
+				8246E2472502505000B4BA67 /* AppDelegate.swift in Sources */,
+				8246E2CF2502518800B4BA67 /* MobileCatalogsInteractor.swift in Sources */,
+				8246E2E32502518800B4BA67 /* MobileCatalogsViewModel.swift in Sources */,
+				8246E2E12502518800B4BA67 /* Extensions.swift in Sources */,
+				8246E2F02502518800B4BA67 /* ResponseParser.swift in Sources */,
+				82535C582502CEC9004AA2AE /* CategoryCollectionView.swift in Sources */,
+				8246E2EF2502518800B4BA67 /* Reachability.swift in Sources */,
+				8246E2F22502518800B4BA67 /* NetworkError.swift in Sources */,
+				8246E2E02502518800B4BA67 /* ShadowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8246E2552502505200B4BA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8246E25E2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8246E2602502505200B4BA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8246E2692502505200B4BA67 /* AxiomTelecomAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8246E25B2502505200B4BA67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8246E2422502505000B4BA67 /* AxiomTelecomAssignment */;
+			targetProxy = 8246E25A2502505200B4BA67 /* PBXContainerItemProxy */;
+		};
+		8246E2662502505200B4BA67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8246E2422502505000B4BA67 /* AxiomTelecomAssignment */;
+			targetProxy = 8246E2652502505200B4BA67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8246E28A2502518700B4BA67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8246E28B2502518700B4BA67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8246E28C2502518700B4BA67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8246E28D2502518700B4BA67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8246E26B2502505200B4BA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8246E26C2502505200B4BA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8246E26E2502505200B4BA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A809E5AE17A8E312F2C1BF /* Pods-AxiomTelecomAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxiomTelecomAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AxiomTelecomAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8246E26F2502505200B4BA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E46322A4ED20C1DD918BAE28 /* Pods-AxiomTelecomAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxiomTelecomAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AxiomTelecomAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8246E2712502505200B4BA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A0DC9EEB77DC4D6B698A7A /* Pods-AxiomTelecomAssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxiomTelecomAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AxiomTelecomAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxiomTelecomAssignment.app/AxiomTelecomAssignment";
+			};
+			name = Debug;
+		};
+		8246E2722502505200B4BA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F31DF874D3C182F6D3F5CACF /* Pods-AxiomTelecomAssignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxiomTelecomAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AxiomTelecomAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxiomTelecomAssignment.app/AxiomTelecomAssignment";
+			};
+			name = Release;
+		};
+		8246E2742502505200B4BA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D658EEA6F4713D0FBEF4EE6 /* Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxiomTelecomAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AxiomTelecomAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AxiomTelecomAssignment;
+			};
+			name = Debug;
+		};
+		8246E2752502505200B4BA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC59D2874560607DCCE44CCB /* Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxiomTelecomAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AxiomTelecomAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AxiomTelecomAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8246E23E2502505000B4BA67 /* Build configuration list for PBXProject "AxiomTelecomAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8246E26B2502505200B4BA67 /* Debug */,
+				8246E26C2502505200B4BA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8246E26D2502505200B4BA67 /* Build configuration list for PBXNativeTarget "AxiomTelecomAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8246E26E2502505200B4BA67 /* Debug */,
+				8246E26F2502505200B4BA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8246E2702502505200B4BA67 /* Build configuration list for PBXNativeTarget "AxiomTelecomAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8246E2712502505200B4BA67 /* Debug */,
+				8246E2722502505200B4BA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8246E2732502505200B4BA67 /* Build configuration list for PBXNativeTarget "AxiomTelecomAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8246E2742502505200B4BA67 /* Debug */,
+				8246E2752502505200B4BA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8246E23B2502505000B4BA67 /* Project object */;
+}

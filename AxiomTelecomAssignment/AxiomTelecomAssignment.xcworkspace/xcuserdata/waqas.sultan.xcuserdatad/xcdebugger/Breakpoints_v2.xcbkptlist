@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4FFA2F8E-122C-49C3-A419-1D291D9D6D67"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2D16AFE-75DF-4901-A505-70B465D22EEE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "displayFetchMobileCatalogs(viewModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D5CEE4A-9EA9-42B8-9E06-C1272E23700F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "errorMobileCatalogs(error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D5CEE4A-9EA9-42B8-9E06-C1272E23700F - 72955935256ca17d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AxiomTelecomAssignment.MobileCatalogsViewController.errorMobileCatalogs(error: Swift.String) -&gt; ()"
+                  moduleName = "AxiomTelecomAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waqas.sultan/Desktop/MobileTutorial/AxiomTelecomAssignment/AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  uuid = "1D5CEE4A-9EA9-42B8-9E06-C1272E23700F - e2c573d567036c31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in AxiomTelecomAssignment.MobileCatalogsViewController.errorMobileCatalogs(error: Swift.String) -&gt; ()"
+                  moduleName = "AxiomTelecomAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waqas.sultan/Desktop/MobileTutorial/AxiomTelecomAssignment/AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85BC3555-92A3-4EE1-80A7-97E8A0437570"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "displayFetchMobileCatalogs(viewModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,6 @@
+framework module Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests {
+  umbrella header "Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
