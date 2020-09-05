@@ -20,6 +20,7 @@ protocol MobileCatalogsViewControllerDisplayedLogic {
 class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControllerDisplayedLogic {
 
     
+    @IBOutlet weak var categoryCollectionView: CategoryCollectionView!
     @IBOutlet weak var catalogCollectionView: UICollectionView!
     
     
@@ -66,8 +67,7 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
     
     internal func registerCellForCatalogCollectionView() {
     
-        self.catalogCollectionView.register(UINib(nibName: "MobileCatalogsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MobileCatalogsCollectionViewCell")
-        self.catalogCollectionView.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
+        self.catalogCollectionView.register(cellTypes: [MobileCatalogsCollectionViewCell.self])
 
     }
     
@@ -88,8 +88,10 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
     
     func displayFetchMobileCatalogs(viewModel: DisplayViewModel) {
         self.collectionViewDataSource.mobileCatalogs = viewModel.mobileCatalogs
+        self.categoryCollectionView.model = viewModel.mobileCategory
         DispatchQueue.main.async {
             self.catalogCollectionView.reloadData()
+            self.categoryCollectionView.reloadData()
             self.view.stopActivityIndicator()
             
         }

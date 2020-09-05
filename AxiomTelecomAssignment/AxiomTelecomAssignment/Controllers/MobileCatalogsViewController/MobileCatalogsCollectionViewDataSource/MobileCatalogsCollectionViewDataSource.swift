@@ -21,7 +21,7 @@ class MobileCatalogsCollectionViewDataSource: NSObject,UICollectionViewDelegate,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let collectionView: MobileCatalogsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MobileCatalogsCollectionViewCell", for: indexPath) as! MobileCatalogsCollectionViewCell
+        let collectionView: MobileCatalogsCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
         collectionView.bindData(viewModel: mobileCatalogs[indexPath.row])
         return collectionView
     }
@@ -32,7 +32,10 @@ class MobileCatalogsCollectionViewDataSource: NSObject,UICollectionViewDelegate,
 
 
 extension MobileCatalogsCollectionViewDataSource: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 2.0, height: 100)
-    }
+   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+          let padding: CGFloat =  50
+          let collectionViewSize = collectionView.frame.size.width - padding
+
+          return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
+      }
 }

@@ -81,11 +81,11 @@
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="52g-Pp-GS5" customClass="CategoryCollectionView" customModule="AxiomTelecomAssignment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="414" height="60"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="JYp-kP-tIh"/>
                                         </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5vB-e2-aO2">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5vB-e2-aO2">
                                             <size key="itemSize" width="128" height="128"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -111,11 +111,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-Wz-Ob8">
-                                <rect key="frame" x="0.0" y="164" width="414" height="698"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SfD-t3-Q0P">
-                                    <size key="itemSize" width="128" height="128"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-Wz-Ob8">
+                                <rect key="frame" x="10" y="164" width="394" height="732"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="SfD-t3-Q0P">
+                                    <size key="itemSize" width="150" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -123,14 +123,14 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LYd-VX-K0S" firstAttribute="bottom" secondItem="xTT-Wz-Ob8" secondAttribute="bottom" id="DOP-JV-oew"/>
+                            <constraint firstAttribute="bottom" secondItem="xTT-Wz-Ob8" secondAttribute="bottom" id="DOP-JV-oew"/>
                             <constraint firstItem="xTT-Wz-Ob8" firstAttribute="top" secondItem="7tT-Dk-fdE" secondAttribute="bottom" id="GvO-na-KbO"/>
-                            <constraint firstItem="xTT-Wz-Ob8" firstAttribute="leading" secondItem="LYd-VX-K0S" secondAttribute="leading" id="Sig-Hz-c4h"/>
+                            <constraint firstItem="xTT-Wz-Ob8" firstAttribute="leading" secondItem="1dO-hl-x6q" secondAttribute="leading" constant="10" id="Sig-Hz-c4h"/>
                             <constraint firstItem="7tT-Dk-fdE" firstAttribute="leading" secondItem="LYd-VX-K0S" secondAttribute="leading" id="UgG-zu-TxT"/>
                             <constraint firstItem="7tT-Dk-fdE" firstAttribute="top" secondItem="LYd-VX-K0S" secondAttribute="top" id="m1A-1m-VoI"/>
-                            <constraint firstItem="LYd-VX-K0S" firstAttribute="trailing" secondItem="xTT-Wz-Ob8" secondAttribute="trailing" id="tFS-cO-fk8"/>
+                            <constraint firstAttribute="trailing" secondItem="xTT-Wz-Ob8" secondAttribute="trailing" constant="10" id="tFS-cO-fk8"/>
                             <constraint firstItem="LYd-VX-K0S" firstAttribute="trailing" secondItem="7tT-Dk-fdE" secondAttribute="trailing" id="vi4-vT-5hW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LYd-VX-K0S"/>
@@ -138,6 +138,7 @@
                     <navigationItem key="navigationItem" title="Most Popular" id="VMn-mJ-6J7"/>
                     <connections>
                         <outlet property="catalogCollectionView" destination="xTT-Wz-Ob8" id="vyu-kE-yUt"/>
+                        <outlet property="categoryCollectionView" destination="52g-Pp-GS5" id="HSi-GN-yNj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Llo-wP-o3x" sceneMemberID="firstResponder"/>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29A53EDD2502EDEB00A03E2A /* CollectionView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EDC2502EDEB00A03E2A /* CollectionView+Addition.swift */; };
+		29A53EDF2502EE7600A03E2A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EDE2502EE7600A03E2A /* ReusableView.swift */; };
+		29A53EE12502EE9600A03E2A /* ClassNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EE02502EE9600A03E2A /* ClassNameProtocol.swift */; };
 		3F9E25E991D4345C60A77CDA /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6594EFE7BF5B0933D7898F22 /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework */; };
 		757E390605FE57F9F11D3A62 /* Pods_AxiomTelecomAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A6C64AB5F7565ABBDB1D7D /* Pods_AxiomTelecomAssignment.framework */; };
 		8246E2472502505000B4BA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2462502505000B4BA67 /* AppDelegate.swift */; };
@@ -62,6 +65,9 @@
 
 /* Begin PBXFileReference section */
 		04A809E5AE17A8E312F2C1BF /* Pods-AxiomTelecomAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxiomTelecomAssignment.debug.xcconfig"; path = "Target Support Files/Pods-AxiomTelecomAssignment/Pods-AxiomTelecomAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		29A53EDC2502EDEB00A03E2A /* CollectionView+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Addition.swift"; sourceTree = "<group>"; };
+		29A53EDE2502EE7600A03E2A /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		29A53EE02502EE9600A03E2A /* ClassNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameProtocol.swift; sourceTree = "<group>"; };
 		4D658EEA6F4713D0FBEF4EE6 /* Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6594EFE7BF5B0933D7898F22 /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8246E2432502505000B4BA67 /* AxiomTelecomAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxiomTelecomAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +318,9 @@
 			isa = PBXGroup;
 			children = (
 				8246E2AF2502518700B4BA67 /* Extensions.swift */,
+				29A53EDC2502EDEB00A03E2A /* CollectionView+Addition.swift */,
+				29A53EDE2502EE7600A03E2A /* ReusableView.swift */,
+				29A53EE02502EE9600A03E2A /* ClassNameProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -657,10 +666,12 @@
 				8246E2D32502518800B4BA67 /* MobileCatalogsCollectionViewCell.swift in Sources */,
 				82535C5C2502CEEE004AA2AE /* CategoryCollectionViewCell.swift in Sources */,
 				8246E2F12502518800B4BA67 /* WebAPI.swift in Sources */,
+				29A53EE12502EE9600A03E2A /* ClassNameProtocol.swift in Sources */,
 				8246E2CA2502518800B4BA67 /* MobileCatalogsConfigurator.swift in Sources */,
 				82535C5F2502DC9C004AA2AE /* ActivityIndicator.swift in Sources */,
 				8246E2ED2502518800B4BA67 /* LRUCache.swift in Sources */,
 				8246E2F32502518800B4BA67 /* MobileCatalogsRemoteWorker.swift in Sources */,
+				29A53EDF2502EE7600A03E2A /* ReusableView.swift in Sources */,
 				8246E2FA2502596800B4BA67 /* MobileCatalogsPresenter.swift in Sources */,
 				8246E2D22502518800B4BA67 /* MobileCatalogsViewController.swift in Sources */,
 				8246E2F62502542500B4BA67 /* MobileCatalogElement.swift in Sources */,
@@ -670,6 +681,7 @@
 				8246E2D12502518800B4BA67 /* MobileCatalogsCollectionViewDataSource.swift in Sources */,
 				8246E2EC2502518800B4BA67 /* ServiceApi.swift in Sources */,
 				8246E2472502505000B4BA67 /* AppDelegate.swift in Sources */,
+				29A53EDD2502EDEB00A03E2A /* CollectionView+Addition.swift in Sources */,
 				8246E2CF2502518800B4BA67 /* MobileCatalogsInteractor.swift in Sources */,
 				8246E2E32502518800B4BA67 /* MobileCatalogsViewModel.swift in Sources */,
 				8246E2E12502518800B4BA67 /* Extensions.swift in Sources */,

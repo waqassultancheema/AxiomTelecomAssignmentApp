@@ -27,7 +27,7 @@ class MobileCatalogsPresenter:MobileCatalogsPresenterInput {
         if let output  = output {
             let usersDisplayModel =  convertDataIntoViewModel(mobileCatalogs: mobileCatalogs)
             
-            let viewModel = DisplayViewModel.init(mobileCatalogs: usersDisplayModel)
+            let viewModel = DisplayViewModel.init(mobileCatalogs: usersDisplayModel, mobileCategory: getCategories(mobileCatalogs: mobileCatalogs))
             
             output.successFetchedMobileCatalogs(viewModel:viewModel)
         }
@@ -50,6 +50,12 @@ class MobileCatalogsPresenter:MobileCatalogsPresenterInput {
         }
         
         return displayViewModels
+    }
+    
+    func getCategories(mobileCatalogs: MobileCatalogs) ->  [String] {
+
+        let displayViewModels:[String]  = mobileCatalogs.map { ($0.brand ?? "") }
+        return displayViewModels.unique()
     }
 }
 

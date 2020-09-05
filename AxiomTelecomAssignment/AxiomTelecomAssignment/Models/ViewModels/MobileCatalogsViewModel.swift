@@ -19,6 +19,8 @@ import Foundation
             
         }
         var mobileCatalogs:[DisplayViewModel.MobileCatalogViewModel]
+        var mobileCategory:[String]
+
     }
 
 

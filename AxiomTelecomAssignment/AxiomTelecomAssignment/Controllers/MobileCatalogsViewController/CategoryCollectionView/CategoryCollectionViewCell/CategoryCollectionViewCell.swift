@@ -17,6 +17,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     func bindData(categoryText: String, isSelected: Bool ) {
         self.categoryLabel.text = categoryText
         self.selectedView.isHidden = !isSelected
+        self.categoryLabel.textColor = isSelected ? UIColor.red : UIColor.white
     }
 
 }

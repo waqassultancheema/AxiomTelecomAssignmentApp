@@ -9,30 +9,30 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MobileCatalogsCollectionViewCell" id="1X6-EV-hGe" customClass="MobileCatalogsCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MobileCatalogsCollectionViewCell" id="1X6-EV-hGe" customClass="MobileCatalogsCollectionViewCell" customModule="AxiomTelecomAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mEV-0c-2vx">
-                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0XK-59-aYh">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="keh-db-fSt">
+                        <rect key="frame" x="0.0" y="5" width="200" height="190"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbC-rQ-8w3">
-                        <rect key="frame" x="0.0" y="229" width="300" height="71"/>
+                        <rect key="frame" x="0.0" y="124" width="200" height="71"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NRl-ZY-liz">
-                                <rect key="frame" x="10" y="10" width="280" height="51"/>
+                                <rect key="frame" x="10" y="10" width="180" height="51"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxM-aK-fBu">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-s3-A1q">
-                                        <rect key="frame" x="0.0" y="30.5" width="280" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-s3-A1q">
+                                        <rect key="frame" x="0.0" y="30.5" width="180" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -50,15 +50,20 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="0XK-59-aYh" firstAttribute="leading" secondItem="mEV-0c-2vx" secondAttribute="leading" id="8B9-1Q-zi7"/>
+                    <constraint firstAttribute="trailing" secondItem="keh-db-fSt" secondAttribute="trailing" id="4jg-Bh-my4"/>
                     <constraint firstItem="xbC-rQ-8w3" firstAttribute="leading" secondItem="mEV-0c-2vx" secondAttribute="leading" id="Hbi-7n-qXW"/>
-                    <constraint firstAttribute="trailing" secondItem="0XK-59-aYh" secondAttribute="trailing" id="U6k-Qb-Tj9"/>
-                    <constraint firstAttribute="bottom" secondItem="xbC-rQ-8w3" secondAttribute="bottom" id="Wgh-qg-zgk"/>
-                    <constraint firstItem="0XK-59-aYh" firstAttribute="top" secondItem="mEV-0c-2vx" secondAttribute="top" id="XXV-T7-oL2"/>
-                    <constraint firstAttribute="bottom" secondItem="0XK-59-aYh" secondAttribute="bottom" id="mz1-P9-8XC"/>
+                    <constraint firstItem="keh-db-fSt" firstAttribute="top" secondItem="mEV-0c-2vx" secondAttribute="top" constant="5" id="PqA-0R-Ne8"/>
+                    <constraint firstAttribute="bottom" secondItem="xbC-rQ-8w3" secondAttribute="bottom" constant="5" id="Wgh-qg-zgk"/>
+                    <constraint firstAttribute="bottom" secondItem="keh-db-fSt" secondAttribute="bottom" constant="5" id="X1u-NJ-i86"/>
+                    <constraint firstItem="keh-db-fSt" firstAttribute="leading" secondItem="mEV-0c-2vx" secondAttribute="leading" id="aVp-bt-FOA"/>
                     <constraint firstAttribute="trailing" secondItem="xbC-rQ-8w3" secondAttribute="trailing" id="swC-cj-hhZ"/>
                 </constraints>
             </collectionViewCellContentView>
+            <connections>
+                <outlet property="imageviewThumbnail" destination="keh-db-fSt" id="Oo6-Ld-VUS"/>
+                <outlet property="labelPrice" destination="xQl-s3-A1q" id="B7K-5h-Kyy"/>
+                <outlet property="labelTitle" destination="vxM-aK-fBu" id="lYg-XP-R1M"/>
+            </connections>
             <point key="canvasLocation" x="-332" y="-50"/>
         </collectionViewCell>
     </objects>

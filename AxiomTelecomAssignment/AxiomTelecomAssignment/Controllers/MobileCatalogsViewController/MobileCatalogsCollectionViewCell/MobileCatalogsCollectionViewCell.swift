@@ -16,13 +16,19 @@ class MobileCatalogsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelPrice: UILabel!
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.imageviewThumbnail.image =  UIImage(named: "placeholder")
+        self.labelTitle.text = ""
+        self.labelPrice.text = ""
+    }
     
 
     func bindData(viewModel: DisplayViewModel.MobileCatalogViewModel) {
        
-//        imageviewThumbnail.kf.setImage(with: URL(string: viewModel.picture))
-//        self.labelTitle.text  = viewModel.brand
-//        self.labelPrice.text = viewModel.price
+       self.imageviewThumbnail.kf.setImage(with: URL(string: viewModel.picture),placeholder: UIImage(named: "placeholder"))
+        self.labelTitle.text  = viewModel.brand
+        self.labelPrice.text = viewModel.price
 
     }
     
