@@ -18,23 +18,23 @@ protocol MobileCatalogsViewControllerDisplayedLogic {
 }
 
 class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControllerDisplayedLogic {
-
+    
     
     @IBOutlet weak var categoryCollectionView: CategoryCollectionView!
     @IBOutlet weak var catalogCollectionView: UICollectionView!
     
     
-
+    @IBOutlet var searchBar: UISearchBar!
+    
     let configurator = MobileCatalogsConfigurator()
-
+    
     var requestMobileCatalogs: MobileCatalogsViewControllerGetMobileCatalogs!
     var router: MobileCatalogsAppRouter!
     var collectionViewDataSource:MobileCatalogsCollectionViewDataSource!
-   
-    let searchBar:UISearchBar = UISearchBar()
-     var searchString = ""
+    
+    var searchString = ""
     var selectedCategory = ""
-
+    
     
     
     override func awakeFromNib() {
@@ -46,8 +46,9 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
         
         registerCellForCatalogCollectionView()
         configureCatalogCollectionViewDataSource()
-       
+        
         fetchMobileCatalogs()
+        configureSearchView()
         configureCategoriesCollectionView()
     }
     
@@ -67,8 +68,13 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
     }
     
     internal func registerCellForCatalogCollectionView() {
-    
+        
         self.catalogCollectionView.register(cellTypes: [MobileCatalogsCollectionViewCell.self])
+    }
+    
+    internal func configureSearchView() {
+        searchBar.placeholder = "Search"
+        searchBar.delegate = self
     }
     
     func configureCategoriesCollectionView() {
@@ -88,11 +94,12 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
     }
     
     
-  
+    
     
     func displayFetchMobileCatalogs(viewModel: DisplayViewModel) {
         self.collectionViewDataSource.mobileCatalogs = viewModel.mobileCatalogs
         self.categoryCollectionView.model = viewModel.mobileCategory
+        self.selectedCategory = self.selectedCategory.isEmpty ? (viewModel.mobileCategory.first ?? "") : self.selectedCategory
         DispatchQueue.main.async {
             self.catalogCollectionView.reloadData()
             self.categoryCollectionView.reloadData()
@@ -110,19 +117,24 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
     }
     
     
+    // IBAction:-
     
-    
-    
-    
-   
-    
-    
-    
+    @IBAction func btnSearchAction(_ sender: Any) {
+        let button: UIButton = sender as! UIButton
+        button.isSelected = !button.isSelected
+        self.searchBar.isHidden = !button.isSelected
+        if self.searchBar.isHidden {
+            self.searchString = ""
+            self.fetchMobileCatalogs()
+            searchBar.resignFirstResponder()
+            searchBar.endEditing(true)
+        }
+    }
 }
 
 
 extension MobileCatalogsViewController : UISearchBarDelegate {
-   
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         self.searchString = ""
         self.fetchMobileCatalogs()
@@ -132,7 +144,7 @@ extension MobileCatalogsViewController : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         self.searchString = searchText
         self.fetchMobileCatalogs()
-
+        
     }
 }
 
@@ -145,7 +157,7 @@ extension MobileCatalogsViewController: MobileCatalogsPresenterOutput , AlertVie
     func errorWhileFetchingMobileCatalogs(error: String) {
         self.errorMobileCatalogs(error: error)
     }
-
+    
 }
 
 extension MobileCatalogsViewController: CategoryCollectionViewDelegate {

@@ -43,41 +43,50 @@
                                                     <constraint firstAttribute="width" constant="40" id="OsV-IQ-S9O"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="8" minY="20" maxX="8" maxY="20"/>
-                                                <state key="normal" image="circle.grid.2x2" catalog="system">
+                                                <state key="normal" image="open-menu">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwc-H7-8aK">
-                                                <rect key="frame" x="45" y="0.0" width="269" height="60"/>
+                                                <rect key="frame" x="45" y="0.0" width="249" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybg-D7-pEk" customClass="IconButton" customModule="AxiomTelecomAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="319" y="0.0" width="40" height="60"/>
-                                                <inset key="imageEdgeInsets" minX="8" minY="20" maxX="8" maxY="20"/>
-                                                <state key="normal" image="magnifyingglass" catalog="system">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btnSearchAction:" destination="1cf-4G-Imx" eventType="touchUpInside" id="8RS-1J-VxC"/>
-                                                </connections>
-                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Djo-fy-aEc">
+                                                <rect key="frame" x="299" y="0.0" width="60" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNC-cY-isD">
+                                                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="ERn-PM-MlS"/>
+                                                            <constraint firstAttribute="width" secondItem="GNC-cY-isD" secondAttribute="height" multiplier="1:1" id="Kxe-cm-vX4"/>
+                                                        </constraints>
+                                                        <state key="normal" image="search"/>
+                                                        <connections>
+                                                            <action selector="btnSearchAction:" destination="1cf-4G-Imx" eventType="touchUpInside" id="WLc-oZ-Hmh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="GNC-cY-isD" firstAttribute="centerX" secondItem="Djo-fy-aEc" secondAttribute="centerX" id="1WI-AH-y3e"/>
+                                                    <constraint firstItem="GNC-cY-isD" firstAttribute="centerY" secondItem="Djo-fy-aEc" secondAttribute="centerY" id="9z9-Vf-2g7"/>
+                                                    <constraint firstAttribute="width" constant="60" id="AzQ-xF-moN"/>
+                                                </constraints>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETP-E7-gHn" customClass="IconButton" customModule="AxiomTelecomAssignment" customModuleProvider="target">
                                                 <rect key="frame" x="364" y="0.0" width="40" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="l1H-WG-Kov"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="8" minY="20" maxX="8" maxY="20"/>
-                                                <state key="normal" image="cart" catalog="system">
+                                                <state key="normal" image="cart">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="btnMoreOptionAction:" destination="1cf-4G-Imx" eventType="touchUpInside" id="f7S-9G-woS"/>
-                                                </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="Ybg-D7-pEk" firstAttribute="width" secondItem="Thz-y6-ZZO" secondAttribute="width" id="62r-1q-AUz"/>
-                                            <constraint firstItem="ETP-E7-gHn" firstAttribute="width" secondItem="Thz-y6-ZZO" secondAttribute="width" id="Unb-Fb-I27"/>
-                                        </constraints>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="52g-Pp-GS5" customClass="CategoryCollectionView" customModule="AxiomTelecomAssignment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="414" height="60"/>
@@ -111,26 +120,35 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-Wz-Ob8">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9iH-lQ-ZuW">
                                 <rect key="frame" x="10" y="164" width="394" height="732"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="SfD-t3-Q0P">
-                                    <size key="itemSize" width="150" height="150"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
+                                <subviews>
+                                    <searchBar hidden="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yra-MB-ubW">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="0.0"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-Wz-Ob8">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="732"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="SfD-t3-Q0P">
+                                            <size key="itemSize" width="150" height="150"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="xTT-Wz-Ob8" secondAttribute="bottom" id="DOP-JV-oew"/>
-                            <constraint firstItem="xTT-Wz-Ob8" firstAttribute="top" secondItem="7tT-Dk-fdE" secondAttribute="bottom" id="GvO-na-KbO"/>
-                            <constraint firstItem="xTT-Wz-Ob8" firstAttribute="leading" secondItem="1dO-hl-x6q" secondAttribute="leading" constant="10" id="Sig-Hz-c4h"/>
+                            <constraint firstAttribute="bottom" secondItem="9iH-lQ-ZuW" secondAttribute="bottom" id="6tz-9B-20D"/>
+                            <constraint firstItem="9iH-lQ-ZuW" firstAttribute="leading" secondItem="LYd-VX-K0S" secondAttribute="leading" constant="10" id="C1J-Li-BZJ"/>
+                            <constraint firstItem="9iH-lQ-ZuW" firstAttribute="top" secondItem="7tT-Dk-fdE" secondAttribute="bottom" id="EZn-mI-mRV"/>
                             <constraint firstItem="7tT-Dk-fdE" firstAttribute="leading" secondItem="LYd-VX-K0S" secondAttribute="leading" id="UgG-zu-TxT"/>
+                            <constraint firstItem="LYd-VX-K0S" firstAttribute="trailing" secondItem="9iH-lQ-ZuW" secondAttribute="trailing" constant="10" id="cPn-s0-QwW"/>
                             <constraint firstItem="7tT-Dk-fdE" firstAttribute="top" secondItem="LYd-VX-K0S" secondAttribute="top" id="m1A-1m-VoI"/>
-                            <constraint firstAttribute="trailing" secondItem="xTT-Wz-Ob8" secondAttribute="trailing" constant="10" id="tFS-cO-fk8"/>
                             <constraint firstItem="LYd-VX-K0S" firstAttribute="trailing" secondItem="7tT-Dk-fdE" secondAttribute="trailing" id="vi4-vT-5hW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LYd-VX-K0S"/>
@@ -139,6 +157,7 @@
                     <connections>
                         <outlet property="catalogCollectionView" destination="xTT-Wz-Ob8" id="vyu-kE-yUt"/>
                         <outlet property="categoryCollectionView" destination="52g-Pp-GS5" id="HSi-GN-yNj"/>
+                        <outlet property="searchBar" destination="yra-MB-ubW" id="iEm-In-jzw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Llo-wP-o3x" sceneMemberID="firstResponder"/>
@@ -147,8 +166,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cart" catalog="system" width="128" height="102"/>
-        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="cart" width="512" height="512"/>
+        <image name="open-menu" width="512" height="512"/>
+        <image name="search" width="512" height="512"/>
     </resources>
 </document>

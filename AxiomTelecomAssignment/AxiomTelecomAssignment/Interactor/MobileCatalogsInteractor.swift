@@ -49,7 +49,6 @@ class MobileCatalogsInteractor:MobileCatalogsInteractorInput,MobileCatalogsDataS
             self.filterMobileCatalogs(mobileCatalogs: mobileCatalogs ?? [],searchString: searchString, selectedCategory: categories.first ?? "")
         }) { (error) in
             self.output.errorWhileFetchMobileCatalogs(error: error ?? "Error Occured While Fetching")
-
         }
     }
     
@@ -65,7 +64,7 @@ class MobileCatalogsInteractor:MobileCatalogsInteractorInput,MobileCatalogsDataS
 
         } else {
             let results = mobileCatalogs.filter({ (catelog) -> Bool in
-                if ((catelog.brand?.contains(searchString) ?? true) || ("\(catelog.priceEur ?? 0)".contains(searchString)) || (catelog.phone?.contains(searchString) ?? true)  || (catelog.sim?.contains(searchString) ?? true)  || (catelog.gps?.contains(searchString) ?? true)  || (catelog.audioJack?.contains(searchString) ?? true)) &&  (catelog.brand ?? "") == selectedCategory {
+                if ((catelog.brand?.lowercased().contains(searchString.lowercased()) ?? true) || ("\(catelog.priceEur ?? 0)".lowercased().contains(searchString.lowercased())) || (catelog.phone?.lowercased().contains(searchString.lowercased()) ?? true)  || (catelog.sim?.lowercased().contains(searchString.lowercased()) ?? true)  || (catelog.gps?.contains(searchString.lowercased()) ?? true)  || (catelog.audioJack?.lowercased().contains(searchString.lowercased()) ?? true)) &&  (catelog.brand ?? "").lowercased() == selectedCategory.lowercased() {
                    return true
               }
                return false

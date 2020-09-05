@@ -45,7 +45,7 @@ class MobileCatalogsPresenter:MobileCatalogsPresenterInput {
         var displayViewModels:[DisplayViewModel.MobileCatalogViewModel] = []
         
         for item in mobileCatalogs {
-            let viewModel: DisplayViewModel.MobileCatalogViewModel = DisplayViewModel.MobileCatalogViewModel(picture: item.picture ?? "", brand: item.brand ?? "", price: "\(item.priceEur ?? 0)")
+            let viewModel: DisplayViewModel.MobileCatalogViewModel = DisplayViewModel.MobileCatalogViewModel(picture: item.picture ?? "", brand: item.phone ?? "", price: "\(item.priceEur ?? 0)")
             displayViewModels.append(viewModel)
         }
         
