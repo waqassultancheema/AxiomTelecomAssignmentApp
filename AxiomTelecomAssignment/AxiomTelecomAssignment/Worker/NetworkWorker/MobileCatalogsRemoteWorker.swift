@@ -32,7 +32,7 @@ class MobileCatalogsRemoteWorker: MobileCatalogsRemoteWorkerProtocal {
             if let mData = response as? Data {
                 do {
                     
-                    let mobileCatalog = try? newJSONDecoder().decode(MobileCatalogs.self, from: mData)
+                    let mobileCatalog = try newJSONDecoder().decode(MobileCatalogs.self, from: mData)
                     complete(mobileCatalog)
                     
                 } catch  {

@@ -21,7 +21,7 @@ class MobileCatalogsCollectionViewDataSource: NSObject,UICollectionViewDelegate,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let collectionView: MobileCatalogsCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+        let collectionView: MobileCatalogsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MobileCatalogsCollectionViewCell", for: indexPath) as! MobileCatalogsCollectionViewCell
         collectionView.bindData(viewModel: mobileCatalogs[indexPath.row])
         return collectionView
     }

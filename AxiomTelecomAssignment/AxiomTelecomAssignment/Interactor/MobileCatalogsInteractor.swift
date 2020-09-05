@@ -34,14 +34,14 @@ class MobileCatalogsInteractor:MobileCatalogsInteractorInput,MobileCatalogsDataS
             if let mobileCatalogs = mobileCatalogs {
                 filterMobileCatalogs(mobileCatalogs: mobileCatalogs, searchString: searchString,selectedCategory: selectedCategory)
             } else {
-                fetchArticleFromWorker( searchString: searchString)
+                fetchMobileCatalogsFromWorker( searchString: searchString)
             }
 
         
     
        }
     
-    func fetchArticleFromWorker(searchString:String) {
+    func fetchMobileCatalogsFromWorker(searchString:String) {
         
         worker.fetchMobileCatalogs( request: Request.Fetch.MobileCatalogRequest(), complete: { [unowned self] (mobileCatalogs) in
             self.mobileCatalogs = mobileCatalogs

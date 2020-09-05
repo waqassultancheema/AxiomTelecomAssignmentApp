@@ -7,13 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		293A094E250429D700E9F2AF /* CollectionView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EDC2502EDEB00A03E2A /* CollectionView+Addition.swift */; };
+		293A094F250429EB00E9F2AF /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EDE2502EE7600A03E2A /* ReusableView.swift */; };
+		293A095025042A1300E9F2AF /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82535C5A2502CEEE004AA2AE /* CategoryCollectionViewCell.swift */; };
+		293A095125042D3200E9F2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8246E28C2502518700B4BA67 /* Main.storyboard */; };
+		293A0952250430B900E9F2AF /* MobileCatalogsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2872502518700B4BA67 /* MobileCatalogsConfigurator.swift */; };
+		293A0953250430E100E9F2AF /* MobileCatalogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2972502518700B4BA67 /* MobileCatalogsViewController.swift */; };
 		29A53EDD2502EDEB00A03E2A /* CollectionView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EDC2502EDEB00A03E2A /* CollectionView+Addition.swift */; };
 		29A53EDF2502EE7600A03E2A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EDE2502EE7600A03E2A /* ReusableView.swift */; };
 		29A53EE12502EE9600A03E2A /* ClassNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EE02502EE9600A03E2A /* ClassNameProtocol.swift */; };
+		29A53EE62503FC8F00A03E2A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EE52503FC8F00A03E2A /* Extension.swift */; };
+		29A53EFB2503FC9A00A03E2A /* StubMobileCatalogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EEB2503FC9A00A03E2A /* StubMobileCatalogsPresenter.swift */; };
+		29A53EFC2503FC9A00A03E2A /* StubMobileCatalogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EEC2503FC9A00A03E2A /* StubMobileCatalogsInteractor.swift */; };
+		29A53EFD2503FC9A00A03E2A /* StubMobileCatalogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EED2503FC9A00A03E2A /* StubMobileCatalogsViewController.swift */; };
+		29A53EFE2503FC9A00A03E2A /* StubMobileCatalogsRemoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EEE2503FC9A00A03E2A /* StubMobileCatalogsRemoteWorker.swift */; };
+		29A53EFF2503FC9A00A03E2A /* StubMobileCatalogElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EF02503FC9A00A03E2A /* StubMobileCatalogElement.swift */; };
+		29A53F002503FC9A00A03E2A /* StubNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EF22503FC9A00A03E2A /* StubNavigationViewController.swift */; };
+		29A53F012503FC9A00A03E2A /* MobileCatalogs.json in Resources */ = {isa = PBXBuildFile; fileRef = 29A53EF42503FC9A00A03E2A /* MobileCatalogs.json */; };
+		29A53F022503FC9A00A03E2A /* StubServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EF62503FC9A00A03E2A /* StubServiceApi.swift */; };
+		29A53F032503FC9A00A03E2A /* StubURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EF72503FC9A00A03E2A /* StubURLSession.swift */; };
+		29A53F042503FC9A00A03E2A /* StubCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53EF92503FC9A00A03E2A /* StubCollectionView.swift */; };
+		29A53F162503FCA300A03E2A /* MobileCatalogsRemoteWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53F092503FCA300A03E2A /* MobileCatalogsRemoteWorkerTests.swift */; };
+		29A53F172503FCA300A03E2A /* MobileCatalogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53F0A2503FCA300A03E2A /* MobileCatalogsTests.swift */; };
+		29A53F192503FCA300A03E2A /* MobileCatalogsConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53F0C2503FCA300A03E2A /* MobileCatalogsConfiguratorTests.swift */; };
+		29A53F1A2503FCA300A03E2A /* MobileCatalogsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53F0D2503FCA300A03E2A /* MobileCatalogsInteractorTests.swift */; };
+		29A53F1B2503FCA300A03E2A /* MobileCatalogsCollectionViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53F0E2503FCA300A03E2A /* MobileCatalogsCollectionViewDataSourceTests.swift */; };
+		29A53F1D2503FCA300A03E2A /* MobileCatalogsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53F102503FCA300A03E2A /* MobileCatalogsPresenterTests.swift */; };
+		29A53F1E2503FCA300A03E2A /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53F122503FCA300A03E2A /* LRUCacheTests.swift */; };
+		29A53F1F2503FCA300A03E2A /* ServiceApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A53F142503FCA300A03E2A /* ServiceApiTests.swift */; };
+		29A53F452504094500A03E2A /* CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82535C572502CEC9004AA2AE /* CategoryCollectionView.swift */; };
+		29A53F472504094500A03E2A /* MobileCatalogsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2992502518700B4BA67 /* MobileCatalogsCollectionViewCell.swift */; };
+		29A53F482504094500A03E2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2A92502518700B4BA67 /* Constants.swift */; };
+		29A53F492504094500A03E2A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82535C5E2502DC9C004AA2AE /* ActivityIndicator.swift */; };
+		29A53F4A2504094500A03E2A /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2AD2502518700B4BA67 /* ShadowView.swift */; };
+		29A53F4B2504094500A03E2A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2AF2502518700B4BA67 /* Extensions.swift */; };
+		29A53F4F2504094500A03E2A /* MobileCatalogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2902502518700B4BA67 /* MobileCatalogsInteractor.swift */; };
+		29A53F502504094500A03E2A /* MobileCatalogElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2F52502542500B4BA67 /* MobileCatalogElement.swift */; };
+		29A53F512504094500A03E2A /* MobileCatalogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2B32502518700B4BA67 /* MobileCatalogsViewModel.swift */; };
+		29A53F522504094500A03E2A /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2B52502518700B4BA67 /* RequestModel.swift */; };
+		29A53F532504094500A03E2A /* MobileCatalogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2F92502596800B4BA67 /* MobileCatalogsPresenter.swift */; };
+		29A53F552504094500A03E2A /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C02502518800B4BA67 /* ServiceApi.swift */; };
+		29A53F562504094500A03E2A /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C12502518800B4BA67 /* LRUCache.swift */; };
+		29A53F572504094500A03E2A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C32502518800B4BA67 /* Reachability.swift */; };
+		29A53F582504094500A03E2A /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C42502518800B4BA67 /* ResponseParser.swift */; };
+		29A53F592504094500A03E2A /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C52502518800B4BA67 /* WebAPI.swift */; };
+		29A53F5A2504094500A03E2A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C62502518800B4BA67 /* NetworkError.swift */; };
+		29A53F5B2504094500A03E2A /* MobileCatalogsRemoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C92502518800B4BA67 /* MobileCatalogsRemoteWorker.swift */; };
+		29A53F5D2504221400A03E2A /* MobileCatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 29A53F5C2504221400A03E2A /* MobileCatalog.json */; };
+		29A53F5E2504234500A03E2A /* MobileCatalogsCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2962502518700B4BA67 /* MobileCatalogsCollectionViewDataSource.swift */; };
 		3F9E25E991D4345C60A77CDA /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6594EFE7BF5B0933D7898F22 /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework */; };
 		757E390605FE57F9F11D3A62 /* Pods_AxiomTelecomAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A6C64AB5F7565ABBDB1D7D /* Pods_AxiomTelecomAssignment.framework */; };
 		8246E2472502505000B4BA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2462502505000B4BA67 /* AppDelegate.swift */; };
-		8246E25E2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E25D2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift */; };
 		8246E2692502505200B4BA67 /* AxiomTelecomAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2682502505200B4BA67 /* AxiomTelecomAssignmentUITests.swift */; };
 		8246E2CA2502518800B4BA67 /* MobileCatalogsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2872502518700B4BA67 /* MobileCatalogsConfigurator.swift */; };
 		8246E2CC2502518800B4BA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8246E28A2502518700B4BA67 /* LaunchScreen.storyboard */; };
@@ -37,7 +81,6 @@
 		8246E2F22502518800B4BA67 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C62502518800B4BA67 /* NetworkError.swift */; };
 		8246E2F32502518800B4BA67 /* MobileCatalogsRemoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2C92502518800B4BA67 /* MobileCatalogsRemoteWorker.swift */; };
 		8246E2F62502542500B4BA67 /* MobileCatalogElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2F52502542500B4BA67 /* MobileCatalogElement.swift */; };
-		8246E2F82502594D00B4BA67 /* MobileCatalogsAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2F72502594D00B4BA67 /* MobileCatalogsAppRouter.swift */; };
 		8246E2FA2502596800B4BA67 /* MobileCatalogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246E2F92502596800B4BA67 /* MobileCatalogsPresenter.swift */; };
 		82535C582502CEC9004AA2AE /* CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82535C572502CEC9004AA2AE /* CategoryCollectionView.swift */; };
 		82535C5C2502CEEE004AA2AE /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82535C5A2502CEEE004AA2AE /* CategoryCollectionViewCell.swift */; };
@@ -68,13 +111,32 @@
 		29A53EDC2502EDEB00A03E2A /* CollectionView+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Addition.swift"; sourceTree = "<group>"; };
 		29A53EDE2502EE7600A03E2A /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		29A53EE02502EE9600A03E2A /* ClassNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameProtocol.swift; sourceTree = "<group>"; };
+		29A53EE52503FC8F00A03E2A /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		29A53EEB2503FC9A00A03E2A /* StubMobileCatalogsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubMobileCatalogsPresenter.swift; sourceTree = "<group>"; };
+		29A53EEC2503FC9A00A03E2A /* StubMobileCatalogsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubMobileCatalogsInteractor.swift; sourceTree = "<group>"; };
+		29A53EED2503FC9A00A03E2A /* StubMobileCatalogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubMobileCatalogsViewController.swift; sourceTree = "<group>"; };
+		29A53EEE2503FC9A00A03E2A /* StubMobileCatalogsRemoteWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubMobileCatalogsRemoteWorker.swift; sourceTree = "<group>"; };
+		29A53EF02503FC9A00A03E2A /* StubMobileCatalogElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubMobileCatalogElement.swift; sourceTree = "<group>"; };
+		29A53EF22503FC9A00A03E2A /* StubNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubNavigationViewController.swift; sourceTree = "<group>"; };
+		29A53EF42503FC9A00A03E2A /* MobileCatalogs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MobileCatalogs.json; sourceTree = "<group>"; };
+		29A53EF62503FC9A00A03E2A /* StubServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubServiceApi.swift; sourceTree = "<group>"; };
+		29A53EF72503FC9A00A03E2A /* StubURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubURLSession.swift; sourceTree = "<group>"; };
+		29A53EF92503FC9A00A03E2A /* StubCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubCollectionView.swift; sourceTree = "<group>"; };
+		29A53F092503FCA300A03E2A /* MobileCatalogsRemoteWorkerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsRemoteWorkerTests.swift; sourceTree = "<group>"; };
+		29A53F0A2503FCA300A03E2A /* MobileCatalogsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsTests.swift; sourceTree = "<group>"; };
+		29A53F0C2503FCA300A03E2A /* MobileCatalogsConfiguratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsConfiguratorTests.swift; sourceTree = "<group>"; };
+		29A53F0D2503FCA300A03E2A /* MobileCatalogsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsInteractorTests.swift; sourceTree = "<group>"; };
+		29A53F0E2503FCA300A03E2A /* MobileCatalogsCollectionViewDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsCollectionViewDataSourceTests.swift; sourceTree = "<group>"; };
+		29A53F102503FCA300A03E2A /* MobileCatalogsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsPresenterTests.swift; sourceTree = "<group>"; };
+		29A53F122503FCA300A03E2A /* LRUCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUCacheTests.swift; sourceTree = "<group>"; };
+		29A53F142503FCA300A03E2A /* ServiceApiTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApiTests.swift; sourceTree = "<group>"; };
+		29A53F5C2504221400A03E2A /* MobileCatalog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MobileCatalog.json; sourceTree = "<group>"; };
 		4D658EEA6F4713D0FBEF4EE6 /* Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests/Pods-AxiomTelecomAssignment-AxiomTelecomAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6594EFE7BF5B0933D7898F22 /* Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxiomTelecomAssignment_AxiomTelecomAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8246E2432502505000B4BA67 /* AxiomTelecomAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxiomTelecomAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8246E2462502505000B4BA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8246E2542502505200B4BA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8246E2592502505200B4BA67 /* AxiomTelecomAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxiomTelecomAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8246E25D2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxiomTelecomAssignmentTests.swift; sourceTree = "<group>"; };
 		8246E25F2502505200B4BA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8246E2642502505200B4BA67 /* AxiomTelecomAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxiomTelecomAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8246E2682502505200B4BA67 /* AxiomTelecomAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxiomTelecomAssignmentUITests.swift; sourceTree = "<group>"; };
@@ -101,7 +163,6 @@
 		8246E2C62502518800B4BA67 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		8246E2C92502518800B4BA67 /* MobileCatalogsRemoteWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsRemoteWorker.swift; sourceTree = "<group>"; };
 		8246E2F52502542500B4BA67 /* MobileCatalogElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCatalogElement.swift; sourceTree = "<group>"; };
-		8246E2F72502594D00B4BA67 /* MobileCatalogsAppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsAppRouter.swift; sourceTree = "<group>"; };
 		8246E2F92502596800B4BA67 /* MobileCatalogsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCatalogsPresenter.swift; sourceTree = "<group>"; };
 		82535C572502CEC9004AA2AE /* CategoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionView.swift; sourceTree = "<group>"; };
 		82535C5A2502CEEE004AA2AE /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +217,119 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		29A53EE42503FC8F00A03E2A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				29A53EE52503FC8F00A03E2A /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		29A53EE72503FC9A00A03E2A /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				29A53EEA2503FC9A00A03E2A /* Catalog */,
+				29A53EEF2503FC9A00A03E2A /* Models */,
+				29A53EF12503FC9A00A03E2A /* StubNavigationController */,
+				29A53EF32503FC9A00A03E2A /* DummyJson */,
+				29A53EF52503FC9A00A03E2A /* WebApi */,
+				29A53EF82503FC9A00A03E2A /* StubCollectionView */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		29A53EEA2503FC9A00A03E2A /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				29A53EEB2503FC9A00A03E2A /* StubMobileCatalogsPresenter.swift */,
+				29A53EEC2503FC9A00A03E2A /* StubMobileCatalogsInteractor.swift */,
+				29A53EED2503FC9A00A03E2A /* StubMobileCatalogsViewController.swift */,
+				29A53EEE2503FC9A00A03E2A /* StubMobileCatalogsRemoteWorker.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		29A53EEF2503FC9A00A03E2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29A53EF02503FC9A00A03E2A /* StubMobileCatalogElement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29A53EF12503FC9A00A03E2A /* StubNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				29A53EF22503FC9A00A03E2A /* StubNavigationViewController.swift */,
+			);
+			path = StubNavigationController;
+			sourceTree = "<group>";
+		};
+		29A53EF32503FC9A00A03E2A /* DummyJson */ = {
+			isa = PBXGroup;
+			children = (
+				29A53F5C2504221400A03E2A /* MobileCatalog.json */,
+				29A53EF42503FC9A00A03E2A /* MobileCatalogs.json */,
+			);
+			path = DummyJson;
+			sourceTree = "<group>";
+		};
+		29A53EF52503FC9A00A03E2A /* WebApi */ = {
+			isa = PBXGroup;
+			children = (
+				29A53EF62503FC9A00A03E2A /* StubServiceApi.swift */,
+				29A53EF72503FC9A00A03E2A /* StubURLSession.swift */,
+			);
+			path = WebApi;
+			sourceTree = "<group>";
+		};
+		29A53EF82503FC9A00A03E2A /* StubCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				29A53EF92503FC9A00A03E2A /* StubCollectionView.swift */,
+			);
+			path = StubCollectionView;
+			sourceTree = "<group>";
+		};
+		29A53F052503FCA300A03E2A /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				29A53F082503FCA300A03E2A /* MobileCatalogsTests */,
+				29A53F112503FCA300A03E2A /* LRUCacheTests */,
+				29A53F132503FCA300A03E2A /* ServiceApiTests */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		29A53F082503FCA300A03E2A /* MobileCatalogsTests */ = {
+			isa = PBXGroup;
+			children = (
+				29A53F092503FCA300A03E2A /* MobileCatalogsRemoteWorkerTests.swift */,
+				29A53F0A2503FCA300A03E2A /* MobileCatalogsTests.swift */,
+				29A53F0C2503FCA300A03E2A /* MobileCatalogsConfiguratorTests.swift */,
+				29A53F0D2503FCA300A03E2A /* MobileCatalogsInteractorTests.swift */,
+				29A53F0E2503FCA300A03E2A /* MobileCatalogsCollectionViewDataSourceTests.swift */,
+				29A53F102503FCA300A03E2A /* MobileCatalogsPresenterTests.swift */,
+			);
+			path = MobileCatalogsTests;
+			sourceTree = "<group>";
+		};
+		29A53F112503FCA300A03E2A /* LRUCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				29A53F122503FCA300A03E2A /* LRUCacheTests.swift */,
+			);
+			path = LRUCacheTests;
+			sourceTree = "<group>";
+		};
+		29A53F132503FCA300A03E2A /* ServiceApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				29A53F142503FCA300A03E2A /* ServiceApiTests.swift */,
+			);
+			path = ServiceApiTests;
+			sourceTree = "<group>";
+		};
 		69A823597C7F7835E19031D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +373,6 @@
 				8246E28E2502518700B4BA67 /* Interactor */,
 				8246E2B12502518700B4BA67 /* Models */,
 				8246E2BC2502518800B4BA67 /* Presenter */,
-				8246E2912502518700B4BA67 /* Router */,
 				8246E2892502518700B4BA67 /* StoryBoards */,
 				8246E2BF2502518800B4BA67 /* WebApi */,
 				8246E2C72502518800B4BA67 /* Worker */,
@@ -211,7 +384,9 @@
 		8246E25C2502505200B4BA67 /* AxiomTelecomAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				8246E25D2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift */,
+				29A53F052503FCA300A03E2A /* TestCases */,
+				29A53EE72503FC9A00A03E2A /* Stubs */,
+				29A53EE42503FC8F00A03E2A /* Extension */,
 				8246E25F2502505200B4BA67 /* Info.plist */,
 			);
 			path = AxiomTelecomAssignmentTests;
@@ -249,14 +424,6 @@
 				8246E2902502518700B4BA67 /* MobileCatalogsInteractor.swift */,
 			);
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		8246E2912502518700B4BA67 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				8246E2F72502594D00B4BA67 /* MobileCatalogsAppRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		8246E2932502518700B4BA67 /* Controllers */ = {
@@ -543,6 +710,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293A095125042D3200E9F2AF /* Main.storyboard in Resources */,
+				29A53F012503FC9A00A03E2A /* MobileCatalogs.json in Resources */,
+				29A53F5D2504221400A03E2A /* MobileCatalog.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +845,6 @@
 				8246E2FA2502596800B4BA67 /* MobileCatalogsPresenter.swift in Sources */,
 				8246E2D22502518800B4BA67 /* MobileCatalogsViewController.swift in Sources */,
 				8246E2F62502542500B4BA67 /* MobileCatalogElement.swift in Sources */,
-				8246E2F82502594D00B4BA67 /* MobileCatalogsAppRouter.swift in Sources */,
 				8246E2DD2502518800B4BA67 /* Constants.swift in Sources */,
 				8246E2E42502518800B4BA67 /* RequestModel.swift in Sources */,
 				8246E2D12502518800B4BA67 /* MobileCatalogsCollectionViewDataSource.swift in Sources */,
@@ -697,7 +866,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8246E25E2502505200B4BA67 /* AxiomTelecomAssignmentTests.swift in Sources */,
+				29A53F452504094500A03E2A /* CategoryCollectionView.swift in Sources */,
+				29A53EFC2503FC9A00A03E2A /* StubMobileCatalogsInteractor.swift in Sources */,
+				29A53EFF2503FC9A00A03E2A /* StubMobileCatalogElement.swift in Sources */,
+				29A53F162503FCA300A03E2A /* MobileCatalogsRemoteWorkerTests.swift in Sources */,
+				29A53F502504094500A03E2A /* MobileCatalogElement.swift in Sources */,
+				29A53F592504094500A03E2A /* WebAPI.swift in Sources */,
+				29A53F552504094500A03E2A /* ServiceApi.swift in Sources */,
+				29A53F032503FC9A00A03E2A /* StubURLSession.swift in Sources */,
+				29A53F002503FC9A00A03E2A /* StubNavigationViewController.swift in Sources */,
+				29A53F5A2504094500A03E2A /* NetworkError.swift in Sources */,
+				29A53F512504094500A03E2A /* MobileCatalogsViewModel.swift in Sources */,
+				29A53F172503FCA300A03E2A /* MobileCatalogsTests.swift in Sources */,
+				29A53F532504094500A03E2A /* MobileCatalogsPresenter.swift in Sources */,
+				293A094E250429D700E9F2AF /* CollectionView+Addition.swift in Sources */,
+				29A53F5B2504094500A03E2A /* MobileCatalogsRemoteWorker.swift in Sources */,
+				293A094F250429EB00E9F2AF /* ReusableView.swift in Sources */,
+				29A53F4B2504094500A03E2A /* Extensions.swift in Sources */,
+				29A53F482504094500A03E2A /* Constants.swift in Sources */,
+				29A53F1F2503FCA300A03E2A /* ServiceApiTests.swift in Sources */,
+				29A53F472504094500A03E2A /* MobileCatalogsCollectionViewCell.swift in Sources */,
+				29A53F4F2504094500A03E2A /* MobileCatalogsInteractor.swift in Sources */,
+				29A53EE62503FC8F00A03E2A /* Extension.swift in Sources */,
+				29A53F1D2503FCA300A03E2A /* MobileCatalogsPresenterTests.swift in Sources */,
+				293A0953250430E100E9F2AF /* MobileCatalogsViewController.swift in Sources */,
+				29A53F562504094500A03E2A /* LRUCache.swift in Sources */,
+				29A53F492504094500A03E2A /* ActivityIndicator.swift in Sources */,
+				29A53F522504094500A03E2A /* RequestModel.swift in Sources */,
+				29A53EFE2503FC9A00A03E2A /* StubMobileCatalogsRemoteWorker.swift in Sources */,
+				293A095025042A1300E9F2AF /* CategoryCollectionViewCell.swift in Sources */,
+				29A53F042503FC9A00A03E2A /* StubCollectionView.swift in Sources */,
+				29A53F4A2504094500A03E2A /* ShadowView.swift in Sources */,
+				29A53F5E2504234500A03E2A /* MobileCatalogsCollectionViewDataSource.swift in Sources */,
+				29A53F572504094500A03E2A /* Reachability.swift in Sources */,
+				29A53F1A2503FCA300A03E2A /* MobileCatalogsInteractorTests.swift in Sources */,
+				293A0952250430B900E9F2AF /* MobileCatalogsConfigurator.swift in Sources */,
+				29A53EFB2503FC9A00A03E2A /* StubMobileCatalogsPresenter.swift in Sources */,
+				29A53F192503FCA300A03E2A /* MobileCatalogsConfiguratorTests.swift in Sources */,
+				29A53F1E2503FCA300A03E2A /* LRUCacheTests.swift in Sources */,
+				29A53F1B2503FCA300A03E2A /* MobileCatalogsCollectionViewDataSourceTests.swift in Sources */,
+				29A53EFD2503FC9A00A03E2A /* StubMobileCatalogsViewController.swift in Sources */,
+				29A53F022503FC9A00A03E2A /* StubServiceApi.swift in Sources */,
+				29A53F582504094500A03E2A /* ResponseParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

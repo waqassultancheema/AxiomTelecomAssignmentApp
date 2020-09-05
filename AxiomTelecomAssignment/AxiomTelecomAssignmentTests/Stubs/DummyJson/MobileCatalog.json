@@ -1,0 +1,16 @@
+[
+    {
+      "id": 25846,
+      "brand": "Apple",
+      "phone": "Apple iPad Pro 12.9 (2018)",
+      "picture": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-129-2018.jpg",
+      "announceDate": "2018 October",
+      "sim": "Nano-SIM eSIM",
+      "resolution": "2048 x 2732 pixels",
+      "audioJack": "No",
+      "gps": "Yes with A-GPS",
+      "battery": "Li-Po 9720 mAh battery (36.71 Wh)",
+      "priceEur": 1100
+    }
+
+]

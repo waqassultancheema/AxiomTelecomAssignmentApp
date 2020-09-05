@@ -9,7 +9,6 @@
 import UIKit
 
 public protocol ReusableView {
-    static var reuseIdentifier: String { get }
 }
 
 public extension ReusableView {

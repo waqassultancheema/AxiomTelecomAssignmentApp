@@ -27,7 +27,7 @@ class CategoryCollectionView: UICollectionView {
 extension CategoryCollectionView: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       let collectionViewCell: CategoryCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+        let collectionViewCell: CategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as! CategoryCollectionViewCell
         collectionViewCell.bindData(categoryText: model[indexPath.row], isSelected: indexPath.row == isSelectedIndex)
         return collectionViewCell
     }

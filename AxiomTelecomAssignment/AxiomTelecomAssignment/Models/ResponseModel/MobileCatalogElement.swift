@@ -92,6 +92,12 @@ extension MobileCatalogElement {
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
         return String(data: try self.jsonData(), encoding: encoding)
     }
+    
+    convenience init(_ jsonDic: Dictionary<String,AnyObject>) throws {
+        let jsonData = try JSONSerialization.data(withJSONObject: jsonDic, options: .prettyPrinted)
+        try self.init(data: jsonData)
+        
+    }
 }
 
 extension Array where Element == MobileCatalogs.Element {

@@ -17,7 +17,7 @@ protocol MobileCatalogsViewControllerDisplayedLogic {
     func displayFetchMobileCatalogs(viewModel: DisplayViewModel)
 }
 
-class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControllerDisplayedLogic {
+class MobileCatalogsViewController: UIViewController, MobileCatalogsViewControllerDisplayedLogic {
     
     
     @IBOutlet weak var categoryCollectionView: CategoryCollectionView!
@@ -29,8 +29,7 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
     let configurator = MobileCatalogsConfigurator()
     
     var requestMobileCatalogs: MobileCatalogsViewControllerGetMobileCatalogs!
-    var router: MobileCatalogsAppRouter!
-    var collectionViewDataSource:MobileCatalogsCollectionViewDataSource!
+    var collectionViewDataSource: MobileCatalogsCollectionViewDataSource!
     
     var searchString = ""
     var selectedCategory = ""
@@ -62,10 +61,7 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        router.prepare(for: segue, sender: sender)
-    }
+   
     
     internal func registerCellForCatalogCollectionView() {
         
@@ -85,7 +81,8 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
         self.view.startActivityIndicator()
         self.requestMobileCatalogs.fetchItems(searchString: searchString, selectedCategory: selectedCategory)
     }
-    internal func configureCatalogCollectionViewDataSource(collectionViewDataSource: MobileCatalogsCollectionViewDataSource = MobileCatalogsCollectionViewDataSource()) {
+    
+    func configureCatalogCollectionViewDataSource(collectionViewDataSource: MobileCatalogsCollectionViewDataSource = MobileCatalogsCollectionViewDataSource()) {
         self.collectionViewDataSource  = collectionViewDataSource
         if let catalogCollectionView = catalogCollectionView {
             catalogCollectionView.delegate = collectionViewDataSource

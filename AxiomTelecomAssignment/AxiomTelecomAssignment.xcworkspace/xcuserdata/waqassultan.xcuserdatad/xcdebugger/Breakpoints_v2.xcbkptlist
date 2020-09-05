@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "93ABFDEA-2F6A-4D2E-97DD-DDF31C302D0F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AxiomTelecomAssignment/Interactor/MobileCatalogsInteractor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "fetchMobileCatalogs(searchString:selectedCategory:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "83BCC391-B362-4E47-8BBB-3B689D5D67FB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -30,10 +14,42 @@
             filePath = "AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "MobileCatalogsViewController"
-            landmarkType = "3">
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "searchBarCancelButtonClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "83BCC391-B362-4E47-8BBB-3B689D5D67FB - 66bb10aac27f3c19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AxiomTelecomAssignment.MobileCatalogsViewController.searchBarCancelButtonClicked(__C.UISearchBar) -&gt; ()"
+                  moduleName = "AxiomTelecomAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waqassultan/Desktop/My%20Data%20From%20Old%20Mac/Preparation/Assignment/AxiomTelecomAssignment/AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  uuid = "83BCC391-B362-4E47-8BBB-3B689D5D67FB - 4b5740f01e95b8a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AxiomTelecomAssignmentTests.MobileCatalogsViewController.searchBarCancelButtonClicked(__C.UISearchBar) -&gt; ()"
+                  moduleName = "AxiomTelecomAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waqassultan/Desktop/My%20Data%20From%20Old%20Mac/Preparation/Assignment/AxiomTelecomAssignment/AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "51">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,25 +62,89 @@
             filePath = "AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "searchBarCancelButtonClicked(_:)"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "searchBar(_:textDidChange:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1DE9C62E-B0F5-4ED3-AB3C-0B664BB6161C - 5035eb6a63a5550"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AxiomTelecomAssignment.MobileCatalogsViewController.searchBar(_: __C.UISearchBar, textDidChange: Swift.String) -&gt; ()"
+                  moduleName = "AxiomTelecomAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waqassultan/Desktop/My%20Data%20From%20Old%20Mac/Preparation/Assignment/AxiomTelecomAssignment/AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  uuid = "1DE9C62E-B0F5-4ED3-AB3C-0B664BB6161C - 612d7e216ad00e93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AxiomTelecomAssignmentTests.MobileCatalogsViewController.searchBar(_: __C.UISearchBar, textDidChange: Swift.String) -&gt; ()"
+                  moduleName = "AxiomTelecomAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/waqassultan/Desktop/My%20Data%20From%20Old%20Mac/Preparation/Assignment/AxiomTelecomAssignment/AxiomTelecomAssignment/Controllers/MobileCatalogsViewController/MobileCatalogsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "66">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13D5DCC8-9B0C-4566-8191-014A79ECED59"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AxiomTelecomAssignmentTests/Extension/Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "loadJSONDictionaryFromBundle(withName:extension:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7DB0D1F3-4802-4820-BE79-964B3E6E3ADE"
+            uuid = "713B466A-197F-4184-881D-EF829FFE95F6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AxiomTelecomAssignment/Interactor/MobileCatalogsInteractor.swift"
+            filePath = "AxiomTelecomAssignmentTests/Extension/Extension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "fetchMobileCatalogs(searchString:selectedCategory:)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "viewController(screenName:storyboardName:bundle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45952A2F-A301-4FE6-859D-D37106A5E0D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AxiomTelecomAssignmentTests/TestCases/MobileCatalogsTests/MobileCatalogsRemoteWorkerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "testShouldReturnErrorOfMappingMobileCatalogs()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
