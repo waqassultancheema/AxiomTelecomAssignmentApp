@@ -21,7 +21,7 @@ protocol MobileCatalogsAppRouterView {
 class MobileCatalogsAppRouter: MobileCatalogsAppRouterView,MobileCatalogsDataPassing {
     
     var datasource: MobileCatalogsDataSource!
-    var MobileCatalogsViewController:MobileCatalogsViewController? = nil
+    var mobileCatalogsViewController:MobileCatalogsViewController? = nil
     var navigationController:UINavigationController? = nil
     var selectedIndex = 0
     

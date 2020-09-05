@@ -19,8 +19,8 @@ import UIKit
 
 extension MobileCatalogsInteractor: MobileCatalogsViewControllerGetMobileCatalogs
 {
-    func fetchItems(searchString: String) {
-        self.fetchMobileCatalogs(searchString: searchString)
+    func fetchItems(searchString: String, selectedCategory: String) {
+        self.fetchMobileCatalogs(searchString: searchString, selectedCategory: selectedCategory)
 
     }
     
@@ -33,8 +33,8 @@ extension MobileCatalogsInteractor: MobileCatalogsViewControllerGetMobileCatalog
 
 extension MobileCatalogsPresenter: MobileCatalogsInteractorOutput
 {
-    func passedToPresenterFetchedMobileCatalogs(mobileCatalogs: MobileCatalogs) {
-        self.presentFetchMobileCatalogs(mobileCatalogs: mobileCatalogs)
+    func passedToPresenterFetchedMobileCatalogs(mobileCatalogs: MobileCatalogs, categories: [String]) {
+        self.presentFetchMobileCatalogs(mobileCatalogs: mobileCatalogs, categories: categories)
 
     }
     
@@ -57,7 +57,7 @@ class MobileCatalogsConfigurator: NSObject {
 
     func configure(viewController: MobileCatalogsViewController)
     {
-        router.MobileCatalogsViewController = viewController
+        router.mobileCatalogsViewController = viewController
         presenter.output = viewController
         
 

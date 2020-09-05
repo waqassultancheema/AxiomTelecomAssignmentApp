@@ -10,7 +10,7 @@ import UIKit
 
 protocol MobileCatalogsViewControllerGetMobileCatalogs
 {
-    func fetchItems(searchString:String)
+    func fetchItems(searchString:String, selectedCategory: String)
 }
 
 protocol MobileCatalogsViewControllerDisplayedLogic {
@@ -33,7 +33,8 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
    
     let searchBar:UISearchBar = UISearchBar()
      var searchString = ""
-    
+    var selectedCategory = ""
+
     
     
     override func awakeFromNib() {
@@ -47,7 +48,7 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
         configureCatalogCollectionViewDataSource()
        
         fetchMobileCatalogs()
-        handleTableViewSelection()
+        configureCategoriesCollectionView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,12 +69,15 @@ class MobileCatalogsViewController: UIViewController,MobileCatalogsViewControlle
     internal func registerCellForCatalogCollectionView() {
     
         self.catalogCollectionView.register(cellTypes: [MobileCatalogsCollectionViewCell.self])
-
+    }
+    
+    func configureCategoriesCollectionView() {
+        self.categoryCollectionView.collectionViewDelegate = self
     }
     
     internal func fetchMobileCatalogs() {
         self.view.startActivityIndicator()
-        self.requestMobileCatalogs.fetchItems(searchString: searchString)
+        self.requestMobileCatalogs.fetchItems(searchString: searchString, selectedCategory: selectedCategory)
     }
     internal func configureCatalogCollectionViewDataSource(collectionViewDataSource: MobileCatalogsCollectionViewDataSource = MobileCatalogsCollectionViewDataSource()) {
         self.collectionViewDataSource  = collectionViewDataSource
@@ -141,11 +145,12 @@ extension MobileCatalogsViewController: MobileCatalogsPresenterOutput , AlertVie
     func errorWhileFetchingMobileCatalogs(error: String) {
         self.errorMobileCatalogs(error: error)
     }
-    
-    
-    
-    func handleTableViewSelection() {
-       
-        
+
+}
+
+extension MobileCatalogsViewController: CategoryCollectionViewDelegate {
+    func didSelect(model: String?) {
+        self.selectedCategory = model ?? ""
+        self.fetchMobileCatalogs()
     }
 }

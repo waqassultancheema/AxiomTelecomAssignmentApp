@@ -10,7 +10,7 @@
 import UIKit
 protocol MobileCatalogsPresenterInput
 {
-    func presentFetchMobileCatalogs(mobileCatalogs:MobileCatalogs)
+    func presentFetchMobileCatalogs(mobileCatalogs:MobileCatalogs, categories: [String])
     func presentFetchedError(error:String)
 }
 
@@ -23,11 +23,11 @@ class MobileCatalogsPresenter:MobileCatalogsPresenterInput {
  
     var output:MobileCatalogsPresenterOutput!
     
-    func presentFetchMobileCatalogs(mobileCatalogs:MobileCatalogs) {
+    func presentFetchMobileCatalogs(mobileCatalogs:MobileCatalogs, categories: [String]) {
         if let output  = output {
             let usersDisplayModel =  convertDataIntoViewModel(mobileCatalogs: mobileCatalogs)
             
-            let viewModel = DisplayViewModel.init(mobileCatalogs: usersDisplayModel, mobileCategory: getCategories(mobileCatalogs: mobileCatalogs))
+            let viewModel = DisplayViewModel.init(mobileCatalogs: usersDisplayModel, mobileCategory: getCategories(categories: categories))
             
             output.successFetchedMobileCatalogs(viewModel:viewModel)
         }
@@ -52,10 +52,9 @@ class MobileCatalogsPresenter:MobileCatalogsPresenterInput {
         return displayViewModels
     }
     
-    func getCategories(mobileCatalogs: MobileCatalogs) ->  [String] {
+    func getCategories(categories: [String]) ->  [String] {
 
-        let displayViewModels:[String]  = mobileCatalogs.map { ($0.brand ?? "") }
-        return displayViewModels.unique()
+        return categories.unique()
     }
 }
 
